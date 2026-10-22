@@ -1,0 +1,24 @@
+{
+  "name": "wax-defi-retention-metric-suite",
+  "version": "0.1.0",
+  "private": true,
+  "description": "7 of 10 accounts have last at or after 100. That is 7000 bps. It is not a health grade. No pool is read.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.8.0",
+    "vitest": "^2.1.8"
+  }
+}
