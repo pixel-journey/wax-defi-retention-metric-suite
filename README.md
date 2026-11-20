@@ -1,7 +1,7 @@
 # How many came back
 
 **Trust label:** `educational-reference`  
-**Catalog:** [wax-ecosystem-blueprint-catalog](https://github.com/pixel-journey/wax-ecosystem-blueprint-catalog)
+**Catalog:** `wax-ecosystem-blueprint-catalog` (private index; not this public course)
 
 7 of 10 accounts have last at or after 100. That is 7000 bps. It is not a health grade. No pool is read.
 
