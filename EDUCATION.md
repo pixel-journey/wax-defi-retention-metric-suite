@@ -46,6 +46,15 @@ The name rule is **looser** than [px-invariant-kit](https://github.com/pixel-jou
 
 A batch of 21 accounts is refused even if every timestamp is valid. That cap is teaching RAM, not a chain limit.
 
+### Attack → test
+
+| Attack | Lab behavior |
+| --- | --- |
+| Empty list | refused (need ≥1) |
+| 21 rows | refused |
+| Duplicate name | refused |
+| Round 3333.33 up | floors to 3333 |
+
 ---
 
 ## Masterclass
@@ -58,17 +67,11 @@ A batch of 21 accounts is refused even if every timestamp is valid. That cap is 
 4. Reading a Hyperion action history and citing this file as the query.  
 5. Calling a 12-character name with a dot illegal because the invariant kit would refuse it. This file allows the dot.
 
-### What this is not
-
-- A pool or DEX retention oracle
-- Proof a wallet is the same person
-- A reason to market "70% retention" from ten typed rows
-
 ### Exercises
 
-1. Cutoff 100, last times 100, 100, 99. Returned and bps? (2 of 3 → 6666.)  
-2. Why is one of three 3333 and not 3334?  
-3. Does an empty list succeed? (No. At least one row.)
+1. Cutoff 100, last times 100, 100, 99. Returned and bps? (2 of 3 → **6666**.)  
+2. Why is one of three 3333 and not 3334? (Floor.)  
+3. Does an empty list succeed? (**No**.)
 
 ---
 
@@ -76,3 +79,4 @@ A batch of 21 accounts is refused even if every timestamp is valid. That cap is 
 
 - A live Hyperion or Alcor query
 - That coming back once makes an account loyal
+- That 7000 bps is TVL retention
